@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx7rbaob88ch8"
-path="res://.godot/imported/images.jpg-828aec76970545e387c8e5ec74aa0b53.ctex"
+uid="uid://bw6hn5gutyoxx"
+path="res://.godot/imported/LeftPlants.png-764787a571fb17e57bbba8688b9b144c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images.jpg"
-dest_files=["res://.godot/imported/images.jpg-828aec76970545e387c8e5ec74aa0b53.ctex"]
+source_file="res://Assets/Art/Plant Room/Plant South/LeftPlants.png"
+dest_files=["res://.godot/imported/LeftPlants.png-764787a571fb17e57bbba8688b9b144c.ctex"]
 
 [params]
 

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://7spqlmlkfxtx"]
+
+[ext_resource type="Script" uid="uid://dn2trbbnqn46n" path="res://Scripts/scene_transition.gd" id="1_x835v"]
+[ext_resource type="Texture2D" uid="uid://g6a70s12aw7k" path="res://Assets/Art/Textures/arrow-right.png" id="2_hea8y"]
+[ext_resource type="Script" uid="uid://4xoj8hjif0jx" path="res://Scripts/set_texture_button.gd" id="2_omtb7"]
+
+[node name="Arrow" type="Node2D" unique_id=289132649]
+scale = Vector2(7.4799995, 7.4799995)
+script = ExtResource("1_x835v")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1236012806]
+scale = Vector2(0.033451177, 0.033451177)
+texture = ExtResource("2_hea8y")
+region_rect = Rect2(168.89233, 142.9747, 14.191498, 17.08229)
+script = ExtResource("2_omtb7")
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1806246608]
+offset_left = -228.87703
+offset_top = -257.75403
+offset_right = 232.08562
+offset_bottom = 258.82355
+action_mode = 0

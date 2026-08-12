@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cywiy87f8guyb"]
+
+[ext_resource type="Texture2D" uid="uid://b358lo3l88pvh" path="res://Assets/Art/Plant Room/Plant North/Door Closed.png" id="1_svh8k"]
+
+[node name="RoomObject" type="Sprite2D" unique_id=1261901402]
+texture = ExtResource("1_svh8k")
