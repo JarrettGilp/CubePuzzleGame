@@ -1,16 +1,28 @@
 [gd_scene format=3 uid="uid://doxatcw08u7pm"]
 
 [ext_resource type="PackedScene" uid="uid://dg21qchvle5jk" path="res://Scenes/player_camera.tscn" id="1_iukft"]
+[ext_resource type="Script" uid="uid://dn2trbbnqn46n" path="res://Scripts/scene_transition.gd" id="1_kldst"]
 [ext_resource type="PackedScene" uid="uid://8acc10183l85" path="res://Scenes/UIScenes/ui_canvas_layer.tscn" id="3_j5yw3"]
-[ext_resource type="PackedScene" uid="uid://xrtrbyrefhb6" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomNorth.tscn" id="3_kldst"]
+[ext_resource type="Script" uid="uid://bwmih6nsouuof" path="res://Scripts/WorldController.gd" id="4_b2bpf"]
+[ext_resource type="PackedScene" uid="uid://c14ksw2mbeq4o" path="res://Scenes/RoomScenes/PlantRoom/PlantRoom.tscn" id="5_7lihs"]
+[ext_resource type="PackedScene" uid="uid://c7nr4ng7gorjt" path="res://Scenes/RoomScenes/Room2/Room2.tscn" id="5_fgofq"]
 
 [node name="Game" type="Node2D" unique_id=2034644759]
 
 [node name="PlayerCamera" parent="." unique_id=881314572 instance=ExtResource("1_iukft")]
-position = Vector2(576, 328)
 scale = Vector2(2.4400005, 2.4400005)
 
 [node name="UICanvasLayer" parent="." unique_id=885749858 instance=ExtResource("3_j5yw3")]
 
-[node name="PlantRoomNorth" parent="." unique_id=1221086878 instance=ExtResource("3_kldst")]
-position = Vector2(576, 328)
+[node name="WorldController" type="Node2D" parent="." unique_id=1978304953 groups=["world_controller"]]
+script = ExtResource("4_b2bpf")
+
+[node name="PlantRoom" parent="WorldController" unique_id=1221086878 instance=ExtResource("5_7lihs")]
+
+[node name="Room2" parent="WorldController" unique_id=2063506616 instance=ExtResource("5_fgofq")]
+visible = false
+
+[node name="SceneTransition" type="Node2D" parent="." unique_id=881818561]
+script = ExtResource("1_kldst")
+
+[node name="TransitionManager" type="Node2D" parent="." unique_id=1746725749]

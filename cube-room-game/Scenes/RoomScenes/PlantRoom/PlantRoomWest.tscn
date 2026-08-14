@@ -2,53 +2,95 @@
 
 [ext_resource type="PackedScene" uid="uid://c5f7kdpnj3mi6" path="res://Scenes/RoomScenes/roomBackground.tscn" id="1_chgfu"]
 [ext_resource type="PackedScene" uid="uid://cywiy87f8guyb" path="res://Scenes/RoomScenes/roomObject.tscn" id="2_3hmrr"]
-[ext_resource type="Texture2D" uid="uid://bepxtidy28uq2" path="res://Assets/Art/Plant Room/Plant North/Open Door.png" id="3_3xb45"]
-[ext_resource type="Texture2D" uid="uid://csybpdiovsh4" path="res://Assets/Art/Plant Room/Plant North/Plants Back.png" id="4_w43g7"]
-[ext_resource type="Texture2D" uid="uid://dcetnrbcvmoba" path="res://Assets/Art/Plant Room/Plant North/Plants Bottom.png" id="5_tne4r"]
-[ext_resource type="Texture2D" uid="uid://dl0lk7ncflnst" path="res://Assets/Art/Plant Room/Plant North/Tree.png" id="6_tpcp2"]
-[ext_resource type="Texture2D" uid="uid://ctquq5rfnfwl8" path="res://Assets/Art/Plant Room/Plant North/Fanny Pack.png" id="7_pmaak"]
+[ext_resource type="Texture2D" uid="uid://btqk0fi26b56w" path="res://Assets/Art/Plant Room/Plant West/Background.jpg" id="2_iujvi"]
+[ext_resource type="Texture2D" uid="uid://2rydwbyrkn3t" path="res://Assets/Art/Plant Room/Plant West/Door Closed.png" id="4_chgfu"]
+[ext_resource type="Texture2D" uid="uid://n42g6ywlox0c" path="res://Assets/Art/Plant Room/Plant West/Door Open.png" id="5_3hmrr"]
+[ext_resource type="Script" uid="uid://d3x8jjd7bsrv" path="res://Scripts/Events/EventTrigger.gd" id="5_chgfu"]
+[ext_resource type="Script" uid="uid://cwqtxn1pl2g6o" path="res://Scripts/Events/Actions/SetVisibleAction.gd" id="6_3hmrr"]
+[ext_resource type="Texture2D" uid="uid://d3usk2e5am44s" path="res://Assets/Art/Plant Room/Plant West/Grass Floor.png" id="6_3xb45"]
+[ext_resource type="Script" uid="uid://bwbos1f26erwl" path="res://Scripts/Events/Actions/SetWorldStateAction.gd" id="7_3xb45"]
 [ext_resource type="PackedScene" uid="uid://7spqlmlkfxtx" path="res://Scenes/UIScenes/arrow.tscn" id="8_85ux1"]
 
 [node name="PlantRoomWest" type="Node2D" unique_id=1221086878]
 
 [node name="RoomBackground" parent="." unique_id=1261901402 instance=ExtResource("1_chgfu")]
+texture = ExtResource("2_iujvi")
 
 [node name="DoorClosed" parent="." unique_id=195513971 instance=ExtResource("2_3hmrr")]
 scale = Vector2(0.92, 0.92)
+texture = ExtResource("4_chgfu")
+
+[node name="TextureButton" type="TextureButton" parent="DoorClosed" unique_id=1914676569]
+offset_left = -234.78261
+offset_top = -469.56522
+offset_right = 234.78261
+offset_bottom = 495.6522
+
+[node name="EventTrigger" type="Node" parent="DoorClosed/TextureButton" unique_id=1737876688]
+script = ExtResource("5_chgfu")
+trigger_type = 1
+metadata/_custom_type_script = "uid://d3x8jjd7bsrv"
+
+[node name="SetDoorOpenVisible" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=824792178 node_paths=PackedStringArray("target")]
+script = ExtResource("6_3hmrr")
+target = NodePath("../../../../DoorOpen")
+metadata/_custom_type_script = "uid://cwqtxn1pl2g6o"
+
+[node name="SetRoom2TransitionArrowVisible" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=168568835 node_paths=PackedStringArray("target")]
+script = ExtResource("6_3hmrr")
+target = NodePath("../../../../Arrows/ForwardArrow-Room2")
+metadata/_custom_type_script = "uid://cwqtxn1pl2g6o"
+
+[node name="SetDoorCloseInvisible" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=792079589 node_paths=PackedStringArray("target")]
+script = ExtResource("6_3hmrr")
+target = NodePath("../../..")
+visible = false
+metadata/_custom_type_script = "uid://cwqtxn1pl2g6o"
+
+[node name="SetWorldStateAction" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=164709427]
+script = ExtResource("7_3xb45")
+state_id = "plant_room_west_door_open"
+metadata/_custom_type_script = "uid://bwbos1f26erwl"
 
 [node name="DoorOpen" parent="." unique_id=2126704288 instance=ExtResource("2_3hmrr")]
 visible = false
 scale = Vector2(0.92, 0.92)
-texture = ExtResource("3_3xb45")
+texture = ExtResource("5_3hmrr")
 
-[node name="PlantsBack" parent="." unique_id=2137147484 instance=ExtResource("2_3hmrr")]
+[node name="GrassFloor" parent="." unique_id=1492131186 instance=ExtResource("2_3hmrr")]
 scale = Vector2(0.92, 0.92)
-texture = ExtResource("4_w43g7")
-
-[node name="PlantsFront" parent="." unique_id=2118056764 instance=ExtResource("2_3hmrr")]
-scale = Vector2(0.92, 0.92)
-texture = ExtResource("5_tne4r")
-
-[node name="Tree" parent="." unique_id=1144616512 instance=ExtResource("2_3hmrr")]
-scale = Vector2(0.92, 0.92)
-texture = ExtResource("6_tpcp2")
-
-[node name="FannyPack" parent="." unique_id=1492131186 instance=ExtResource("2_3hmrr")]
-scale = Vector2(0.92, 0.92)
-texture = ExtResource("7_pmaak")
+texture = ExtResource("6_3xb45")
 
 [node name="Arrows" type="Node2D" parent="." unique_id=258060149]
 
-[node name="LeftArrow-West" parent="Arrows" unique_id=289132649 instance=ExtResource("8_85ux1")]
+[node name="LeftArrow-South" parent="Arrows" unique_id=289132649 instance=ExtResource("8_85ux1")]
 z_index = 15
 position = Vector2(-792, 0)
-rotation = -1.5707964
-room_name = "PlantRoom"
-direction = "West"
+rotation = -3.1415927
 
-[node name="RightArrow-East" parent="Arrows" unique_id=274414302 instance=ExtResource("8_85ux1")]
+[node name="TextureButton" parent="Arrows/LeftArrow-South" index="0" unique_id=1806246608]
+target_view = "South"
+
+[node name="RightArrow-North" parent="Arrows" unique_id=274414302 instance=ExtResource("8_85ux1")]
 z_index = 15
 position = Vector2(784, 0)
-rotation = -4.707895
-room_name = "PlantRoom"
-direction = "East"
+rotation = -6.2831855
+
+[node name="TextureButton" parent="Arrows/RightArrow-North" index="0" unique_id=1806246608]
+target_view = "North"
+
+[node name="ForwardArrow-Room2" parent="Arrows" unique_id=1590540513 instance=ExtResource("8_85ux1")]
+visible = false
+z_index = 15
+position = Vector2(2.3841858e-07, 472)
+rotation = -7.8435645
+
+[node name="TextureButton" parent="Arrows/ForwardArrow-Room2" index="0" unique_id=1806246608]
+navigation_type = 1
+target_view = "North"
+target_room = "Room2"
+target_room_view = "South"
+
+[editable path="Arrows/LeftArrow-South"]
+[editable path="Arrows/RightArrow-North"]
+[editable path="Arrows/ForwardArrow-Room2"]

@@ -14,8 +14,14 @@ config/name="CubeRoomGame"
 run/main_scene="uid://doxatcw08u7pm"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+SaveManager="*uid://dkymlmiw7ypc"
+
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 
 [dotnet]

@@ -43,12 +43,17 @@ texture = ExtResource("7_yiff5")
 z_index = 15
 position = Vector2(-792, 0)
 rotation = -3.1415927
-room_name = "PlantRoom"
-direction = "West"
+
+[node name="TextureButton" parent="Arrows/LeftArrow-West" index="0" unique_id=1806246608]
+target_view = "West"
 
 [node name="RightArrow-East" parent="Arrows" unique_id=274414302 instance=ExtResource("8_fdtku")]
 z_index = 15
 position = Vector2(784, 0)
 rotation = -6.2831855
-room_name = "PlantRoom"
-direction = "East"
+
+[node name="TextureButton" parent="Arrows/RightArrow-East" index="0" unique_id=1806246608]
+target_view = "East"
+
+[editable path="Arrows/LeftArrow-West"]
+[editable path="Arrows/RightArrow-East"]

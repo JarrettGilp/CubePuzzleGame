@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://8acc10183l85"]
 
 [ext_resource type="PackedScene" uid="uid://bgmtefpl5g8u4" path="res://Scenes/UIScenes/player_cursor.tscn" id="1_0aqfq"]
-[ext_resource type="Script" uid="uid://dco7uplepu77l" path="res://Scripts/cursor.gd" id="2_c1cte"]
+[ext_resource type="Script" uid="uid://dco7uplepu77l" path="res://Scripts/UI/cursor.gd" id="2_c1cte"]
 
 [node name="UICanvasLayer" type="CanvasLayer" unique_id=885749858]
 
@@ -12,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="PlayerCursor" parent="." unique_id=1179223427 instance=ExtResource("1_0aqfq")]
 script = ExtResource("2_c1cte")
