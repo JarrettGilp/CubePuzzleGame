@@ -31,19 +31,14 @@ script = ExtResource("5_chgfu")
 trigger_type = 1
 metadata/_custom_type_script = "uid://d3x8jjd7bsrv"
 
-[node name="SetDoorOpenVisible" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=824792178 node_paths=PackedStringArray("target")]
+[node name="SetVisibleActions" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=824792178 node_paths=PackedStringArray("targets")]
 script = ExtResource("6_3hmrr")
-target = NodePath("../../../../DoorOpen")
+targets = [NodePath("../../../../DoorOpen"), NodePath("../../../../Arrows/ForwardArrow-Room2")]
 metadata/_custom_type_script = "uid://cwqtxn1pl2g6o"
 
-[node name="SetRoom2TransitionArrowVisible" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=168568835 node_paths=PackedStringArray("target")]
+[node name="SetInvisibleActions" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=792079589 node_paths=PackedStringArray("targets")]
 script = ExtResource("6_3hmrr")
-target = NodePath("../../../../Arrows/ForwardArrow-Room2")
-metadata/_custom_type_script = "uid://cwqtxn1pl2g6o"
-
-[node name="SetDoorCloseInvisible" type="Node" parent="DoorClosed/TextureButton/EventTrigger" unique_id=792079589 node_paths=PackedStringArray("target")]
-script = ExtResource("6_3hmrr")
-target = NodePath("../../..")
+targets = [NodePath("../../..")]
 visible = false
 metadata/_custom_type_script = "uid://cwqtxn1pl2g6o"
 

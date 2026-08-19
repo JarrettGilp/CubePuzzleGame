@@ -1,13 +1,16 @@
 extends Node
 class_name EventTrigger
 
+
 enum TriggerType {
 	MANUAL,
 	BUTTON,
 	AREA_ENTER
 }
 
+
 @export var trigger_type: TriggerType = TriggerType.MANUAL
+
 
 @export_category("Area Settings")
 @export var required_body: Node
@@ -27,6 +30,7 @@ func _ready() -> void:
 
 			button.pressed.connect(execute)
 
+
 		TriggerType.AREA_ENTER:
 			var area := get_parent() as Area2D
 
@@ -41,15 +45,17 @@ func _ready() -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if required_body == null:
-		execute()
-		return
-
-	if required_body == body:
+	if required_body == null or required_body == body:
 		execute()
 
 
 func execute() -> void:
-	for child in get_children():
+	_execute_actions(self)
+
+
+func _execute_actions(parent: Node) -> void:
+	for child in parent.get_children():
 		if child is EventAction:
 			child.execute()
+		else:
+			_execute_actions(child)

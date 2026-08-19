@@ -1,6 +1,7 @@
 extends EventAction
 class_name SetWorldStateAction
 
+
 @export var state_id: String
 @export var value: bool = true
 @export var save_immediately: bool = true
