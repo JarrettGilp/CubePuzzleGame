@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://4c5g7d4pnkbk"]
+
+[node name="TransitionCanvasLayer" type="CanvasLayer" unique_id=885749858]
+layer = 10
+
+[node name="Control" type="Control" parent="." unique_id=1345144252]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopLid" type="ColorRect" parent="Control" unique_id=453081329]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -960.0
+offset_top = -24.0
+offset_right = -826.64355
+offset_bottom = 16.0
+grow_horizontal = 2
+scale = Vector2(14.397504, 14.397504)
+color = Color(0, 0, 0, 1)
+
+[node name="BottomLid" type="ColorRect" parent="Control" unique_id=1013152389]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -960.0
+offset_top = 544.0
+offset_right = -826.64355
+offset_bottom = 584.0
+grow_horizontal = 2
+scale = Vector2(14.397504, 14.397504)
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control" unique_id=2099424167]

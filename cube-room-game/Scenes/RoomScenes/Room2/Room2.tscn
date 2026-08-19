@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c7nr4ng7gorjt"]
+
+[ext_resource type="Script" uid="uid://bjnfoa0g5pe1s" path="res://Scripts/Room/RoomController.gd" id="1_t7hdv"]
+[ext_resource type="PackedScene" uid="uid://cuoc5l5wx1a3b" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomSouth.tscn" id="4_mqf46"]
+
+[node name="Room2" type="Node2D" unique_id=1221086878 node_paths=PackedStringArray("starting_view") groups=["room_controller"]]
+script = ExtResource("1_t7hdv")
+starting_view = NodePath("South")
+
+[node name="South" parent="." unique_id=21008325 instance=ExtResource("4_mqf46")]
+visible = false

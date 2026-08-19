@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://7spqlmlkfxtx"]
+
+[ext_resource type="Texture2D" uid="uid://g6a70s12aw7k" path="res://Assets/Art/Textures/arrow-right.png" id="2_hea8y"]
+[ext_resource type="Script" uid="uid://b8l1b2htp6wgs" path="res://Scripts/UI/arrow_button.gd" id="2_omtb7"]
+
+[node name="Arrow" type="Node2D" unique_id=289132649]
+scale = Vector2(0.15771046, 0.15771046)
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1806246608]
+anchors_preset = -1
+offset_left = -263.65622
+offset_top = -264.62216
+offset_right = 248.34378
+offset_bottom = 247.37784
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+texture_normal = ExtResource("2_hea8y")
+script = ExtResource("2_omtb7")

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b1nk2yexrylis"]
+
+[ext_resource type="PackedScene" uid="uid://c5f7kdpnj3mi6" path="res://Scenes/RoomScenes/roomBackground.tscn" id="1_s4vdm"]
+[ext_resource type="Texture2D" uid="uid://cyk0w8sri5qr6" path="res://Assets/Art/Plant Room/Plant East/Background.jpg" id="2_q3u7q"]
+[ext_resource type="PackedScene" uid="uid://cywiy87f8guyb" path="res://Scenes/RoomScenes/roomObject.tscn" id="2_w28yp"]
+[ext_resource type="Texture2D" uid="uid://xjulfk68xo0j" path="res://Assets/Art/Plant Room/Plant East/Plants Right.png" id="4_3wwk7"]
+[ext_resource type="Texture2D" uid="uid://cvyo45bkqci5f" path="res://Assets/Art/Plant Room/Plant East/PlantsTopRight.png" id="5_nnayu"]
+[ext_resource type="Texture2D" uid="uid://cyxnfq15i0bdd" path="res://Assets/Art/Plant Room/Plant East/PocketWatch.png" id="6_eq8fe"]
+[ext_resource type="Texture2D" uid="uid://sfptqm2b82ji" path="res://Assets/Art/Plant Room/Plant East/Tree Left.png" id="7_l1f5t"]
+[ext_resource type="PackedScene" uid="uid://7spqlmlkfxtx" path="res://Scenes/UIScenes/arrow.tscn" id="8_0qsp5"]
+[ext_resource type="Texture2D" uid="uid://bslck70vyaina" path="res://Assets/Art/Plant Room/Plant East/Window.png" id="8_16n1j"]
+
+[node name="PlantRoomEast" type="Node2D" unique_id=1221086878]
+
+[node name="RoomBackground" parent="." unique_id=1261901402 instance=ExtResource("1_s4vdm")]
+texture = ExtResource("2_q3u7q")
+
+[node name="PlantsRight" parent="." unique_id=2118056764 instance=ExtResource("2_w28yp")]
+scale = Vector2(0.92, 0.92)
+texture = ExtResource("4_3wwk7")
+
+[node name="PlantsTopRight" parent="." unique_id=2137147484 instance=ExtResource("2_w28yp")]
+scale = Vector2(0.92, 0.92)
+texture = ExtResource("5_nnayu")
+
+[node name="PocketWatch" parent="." unique_id=1144616512 instance=ExtResource("2_w28yp")]
+scale = Vector2(0.92, 0.92)
+texture = ExtResource("6_eq8fe")
+
+[node name="TreeLeft" parent="." unique_id=1492131186 instance=ExtResource("2_w28yp")]
+scale = Vector2(0.92, 0.92)
+texture = ExtResource("7_l1f5t")
+
+[node name="Window" parent="." unique_id=557091703 instance=ExtResource("2_w28yp")]
+scale = Vector2(0.92, 0.92)
+texture = ExtResource("8_16n1j")
+
+[node name="Arrows" type="Node2D" parent="." unique_id=258060149]
+
+[node name="LeftArrow-North" parent="Arrows" unique_id=289132649 instance=ExtResource("8_0qsp5")]
+z_index = 15
+position = Vector2(-792, 0)
+rotation = -3.1415927
+
+[node name="TextureButton" parent="Arrows/LeftArrow-North" index="0" unique_id=1806246608]
+target_view = "North"
+
+[node name="RightArrow-South" parent="Arrows" unique_id=274414302 instance=ExtResource("8_0qsp5")]
+z_index = 15
+position = Vector2(783.9999, 0)
+scale = Vector2(0.15771045, 0.15771045)
+
+[node name="TextureButton" parent="Arrows/RightArrow-South" index="0" unique_id=1806246608]
+target_view = "South"
+
+[editable path="Arrows/LeftArrow-North"]
+[editable path="Arrows/RightArrow-South"]

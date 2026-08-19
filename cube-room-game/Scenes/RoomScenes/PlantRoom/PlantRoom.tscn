@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c14ksw2mbeq4o"]
+
+[ext_resource type="PackedScene" uid="uid://xrtrbyrefhb6" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomNorth.tscn" id="1_cpbmy"]
+[ext_resource type="Script" uid="uid://bjnfoa0g5pe1s" path="res://Scripts/Room/RoomController.gd" id="1_om0q4"]
+[ext_resource type="PackedScene" uid="uid://b1nk2yexrylis" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomEast.tscn" id="2_om0q4"]
+[ext_resource type="PackedScene" uid="uid://cuoc5l5wx1a3b" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomSouth.tscn" id="3_2bwl2"]
+[ext_resource type="PackedScene" uid="uid://d03xcnerjqnfa" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomWest.tscn" id="4_2hiif"]
+
+[node name="PlantRoom" type="Node2D" unique_id=1221086878 node_paths=PackedStringArray("starting_view") groups=["room_controller"]]
+script = ExtResource("1_om0q4")
+starting_view = NodePath("North")
+
+[node name="North" parent="." unique_id=1275425396 instance=ExtResource("1_cpbmy")]
+
+[node name="East" parent="." unique_id=436149144 instance=ExtResource("2_om0q4")]
+visible = false
+
+[node name="South" parent="." unique_id=21008325 instance=ExtResource("3_2bwl2")]
+visible = false
+
+[node name="West" parent="." unique_id=686543873 instance=ExtResource("4_2hiif")]
+visible = false

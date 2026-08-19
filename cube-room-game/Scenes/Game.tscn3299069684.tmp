@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://doxatcw08u7pm"]
+
+[ext_resource type="PackedScene" uid="uid://dg21qchvle5jk" path="res://Scenes/player_camera.tscn" id="1_iukft"]
+[ext_resource type="PackedScene" uid="uid://8acc10183l85" path="res://Scenes/UIScenes/ui_canvas_layer.tscn" id="3_j5yw3"]
+[ext_resource type="PackedScene" uid="uid://xrtrbyrefhb6" path="res://Scenes/RoomScenes/PlantRoom/PlantRoomNorth.tscn" id="3_kldst"]
+
+[node name="Game" type="Node2D" unique_id=2034644759]
+
+[node name="PlayerCamera" parent="." unique_id=881314572 instance=ExtResource("1_iukft")]
+position = Vector2(576, 328)
+scale = Vector2(2.4400005, 2.4400005)
+
+[node name="UICanvasLayer" parent="." unique_id=885749858 instance=ExtResource("3_j5yw3")]
+
+[node name="PlantRoomNorth" parent="." unique_id=1221086878 instance=ExtResource("3_kldst")]
+position = Vector2(576, 328)

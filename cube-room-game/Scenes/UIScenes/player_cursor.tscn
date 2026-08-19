@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bgmtefpl5g8u4"]
+
+[ext_resource type="Texture2D" uid="uid://cmq2bbp3k0g8i" path="res://Assets/Art/Textures/cursor.png" id="1_xjih1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sed2m"]
+atlas = ExtResource("1_xjih1")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dxxh"]
+atlas = ExtResource("1_xjih1")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ti6sv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sed2m")
+}],
+"loop": 0,
+"name": &"click",
+"speed": 0.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dxxh")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="PlayerCursor" type="AnimatedSprite2D" unique_id=1179223427]
+scale = Vector2(5.526221, 5.526221)
+sprite_frames = SubResource("SpriteFrames_ti6sv")
+animation = &"click"
