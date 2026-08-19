@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"fd456f6512deaadc","type":"file","file":"Images/Pasted image 20260810220135.png","x":-640,"y":-1060,"width":640,"height":640},
+		{"id":"646eca310965425f","type":"file","file":"Images/New Project(6).png","x":-640,"y":20,"width":980,"height":620},
+		{"id":"def75a25fcdcc8c8","type":"text","text":"Fish - Source Ocean\n\nBlank - 3D low poly, PS2\nOcean - Silhouette, White eyes\nGlacial - 3D Abstract\nDarkland - 3D model with texture\nMountains - Pixel Fish\nDesert - Cardboard cut out of fish\nGrasslands - Hyper real clipart\nSkylands - Sketched fish with top hat\n\n\n\n","x":-640,"y":-360,"width":900,"height":280},
+		{"id":"42b7a590810ec8bb","type":"text","text":"Penguin - Glacial Ocean\n\nBlank - 3D low poly, PS2\nOcean - Silhouette  \nGlacial - 3D Abstract\nDarkland - 3D model with texture\nMountains - Pixel Fish\nDesert - Cardboard cut out of fish\nGrasslands - Hyper real clipart\nSkylands - Sketched fish with top hat\n\n\n\n","x":480,"y":-360,"width":900,"height":280}
+	],
+	"edges":[]
+}

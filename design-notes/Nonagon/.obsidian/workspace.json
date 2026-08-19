@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "2febcb9c2e11da7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "679a20663a99e060",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "165aa164ab143439",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Puzzle Ideas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Puzzle Ideas"
+            }
+          },
+          {
+            "id": "c8bfa0143c482a70",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Layout.canvas",
+                "viewState": {
+                  "x": 1094.5213960450058,
+                  "y": 718.7681591350436,
+                  "zoom": -1.1788510775533452
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Layout"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "003f22ace0e34020",
+    "type": "split",
+    "children": [
+      {
+        "id": "8cf5031eef6518cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "878d541a4b5daaec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1575c40172944a04",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Silhouette",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9dcfe3fa26792281",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0e87aa0a45b87811",
+    "type": "split",
+    "children": [
+      {
+        "id": "21c5137c1f217195",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f32fbc261795cb4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Puzzle Ideas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Puzzle Ideas"
+            }
+          },
+          {
+            "id": "d6f797cdb094d2f0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Puzzle Ideas.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Puzzle Ideas"
+            }
+          },
+          {
+            "id": "e5d6d488647ab114",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "09915be63b6c8b66",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "514290a42b8ed935",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Puzzle Ideas.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Puzzle Ideas"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "1575c40172944a04",
+  "lastOpenFiles": [
+    "Layout.canvas",
+    "Puzzle Ideas.md",
+    "Items.canvas",
+    "Room-Movement.canvas",
+    "Nonagon Notes.md",
+    "Mood Board.canvas",
+    "Art Style Emulation.md",
+    "Images/New Project(6).png",
+    "Images/Pasted image 20260810220135.png",
+    "Untitled.base",
+    "Images/Pasted image 20260810204454.png",
+    "Images/Pasted image 20260810210647.png",
+    "Images/Pasted image 20260810210554.png",
+    "Images/Pasted image 20260810210444.png",
+    "Images/Pasted image 20260810210141.png",
+    "Images/Pasted image 20260810210134.png",
+    "Images/Pasted image 20260810205927.png",
+    "Images/Pasted image 20260810205824.png",
+    "Untitled",
+    "Images",
+    "Rooms-Movement.md",
+    "Welcome.md",
+    "create a link.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"a01be56c8ce3f4ce","type":"file","file":"Images/Pasted image 20260810194147.png","x":-860,"y":-380,"width":878,"height":480},
+		{"id":"1792a76bab2d5805","type":"file","file":"Images/Pasted image 20260810195511.png","x":40,"y":-240,"width":697,"height":392},
+		{"id":"91f5be10c931400c","type":"file","file":"Images/Pasted image 20260810195644.png","x":-800,"y":120,"width":818,"height":460},
+		{"id":"92a1e3acb1211571","type":"file","file":"Images/Pasted image 20260810195828.png","x":40,"y":180,"width":640,"height":400},
+		{"id":"cc02aa34ed14fc88","type":"file","file":"Images/Pasted image 20260810195920.png","x":-1400,"y":125,"width":560,"height":315},
+		{"id":"adad2356325aa988","type":"file","file":"Images/Pasted image 20260810200213.png","x":-1240,"y":480,"width":399,"height":298},
+		{"id":"52ccadcb7c4e19d8","type":"file","file":"Images/Pasted image 20260810200403.png","x":-800,"y":629,"width":400,"height":187}
+	],
+	"edges":[]
+}

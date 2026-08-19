@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"88db1c6c60b53a3a","type":"file","file":"Images/Pasted image 20260810182924.png","x":-120,"y":-40,"width":400,"height":218},
+		{"id":"11b28da7828c6b35","type":"file","file":"Images/Pasted image 20260810183034.png","x":280,"y":-40,"width":400,"height":239},
+		{"id":"b0b002e830ec57de","type":"file","file":"Images/Pasted image 20260810183103.png","x":680,"y":-40,"width":399,"height":239},
+		{"id":"e0f03c9386a2f1e2","type":"file","file":"Images/Pasted image 20260810183203.png","x":1080,"y":-40,"width":399,"height":224},
+		{"id":"bfb314e954011971","type":"file","file":"Images/Pasted image 20260810182924.png","x":1480,"y":-37,"width":400,"height":218},
+		{"id":"d5fdc0ee43434cfe","type":"text","text":"Rusty Lake Style \nClickable Arrow Keys\n* Rotate Left, Right in the room to look at different walls\n* Click on Door to move to that room ","x":-120,"y":-240,"width":600,"height":160}
+	],
+	"edges":[]
+}
